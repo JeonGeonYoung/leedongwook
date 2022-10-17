@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* common.css */
+
+html,body{ margin:0; }
+*{
+    box-sizing: border-box;
+    color:rgb(0, 0, 0);
+}
+ul,li{
+    list-style-type: none;
+    margin:0; padding:0;
+}
+h1,h2,h3,h4,h5,h6,p{ margin:0; }
+img{vertical-align: top;}
+a{text-decoration: none;}
+
+
+
+/* [공통모듈] */
+/* 헤더, 풋터, 사이드배너, 글꼴, 색상 */
+/* 컨포넌트(콘텐츠 유형별 묶음) */
+/* 박스유형, 팝업, 말풍선, 테이블, 버튼, 아이콘 */
+
+/* header */
+header{
+    width:100%;
+    padding:2%;
+    display:flex;
+    position:fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+header > .menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    width:100%; height:100vh;
+    position: fixed;
+    left:0; top:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+}
+header > .menu > div{
+    background-color: rgba(255, 0, 0, 0.7);
+    width:25%; height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right:80%;
+}
+
+header > .trigger:hover > span:nth-of-type(1){
+    transform: rotate(135deg);
+    transition: 0.7s;
+    top:50%;
+}
+header > .trigger:hover > span:nth-of-type(2){
+    transform: rotate(0deg);
+    transition:0.7s;
+    opacity: 0;
+}
+header > .trigger:hover > span:nth-of-type(3){
+    transform: rotate(-135deg);
+    transition: 0.7s;
+    top:50%;
+}
+header > .trigger{
+    width:48px; height:48px;
+    position:absolute;
+    text-align: center;
+    overflow: hidden;
+}
+
+header > .trigger > span{
+    width:30px; height:2px;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+}
+
+
+header > .trigger > span:nth-child(1){top:30%;}
+header > .trigger > span:nth-child(2){top:50%;}
+header > .trigger > span:nth-child(3){top:70%;}
+
+header > h1{margin-left: 5%;}
+
+
+header > nav{font-weight: bold;}
+
+/* header */
+
+/* footer */
+footer > a, footer p{
+    position: relative;
+    bottom:80px;
+    font-size: 14px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+footer > a{
+    left:50%;
+}
+
+
+/* footer */
+
+/* 버튼 */
+
+/* 테이블 */
+
+/* 여백 */
+
+/* 정렬 */
