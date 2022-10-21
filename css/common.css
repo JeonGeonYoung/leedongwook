@@ -30,6 +30,7 @@ header{
     position:fixed;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 header > .menu{
     background-color: rgba(0, 0, 0, 0.7);
@@ -89,6 +90,7 @@ header > h1{margin-left: 5%;}
 
 
 header > nav{font-weight: bold;}
+
 
 /* header */
 

@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="https://jeongeonyoung.github.io/leedongwook/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="그린컴퓨터아카데미" />
+    <meta property="og:description"        content="컴퓨터에 관련된 모든 과정이다" />
+    <meta property="og:image"              content="D:\전건영 개발\HTML\site\img\gallery1.jpg" />
+
+    <meta property="twitter:url"           content="https://jeongeonyoung.github.io/leedongwook/" />
+    <meta property="twitter:card"          content="website" />
+    <meta property="twitter:site"          content="그린컴퓨터아카데미" />
+    <meta property="twitter:title"         content="good" />
+    <meta property="twitter:description"   content="컴퓨터에 관련된 모든 과정이다" />
+    <meta property="twitter:image"         content="D:\전건영 개발\HTML\site\img\gallery1.jpg" />
     <title>Document</title>
+    
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
     <link href="./css/index.css" rel="stylesheet">
 </head>
 <body>
@@ -27,7 +43,7 @@
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">NEWSRELEASE</a></li>
                 </ul>
                 <div>
                     FAMILY SITE
@@ -39,10 +55,9 @@
             </div>
         </div>
     </header>
-    
-    <main>
 
-        <!-- main -->
+    <!-- main -->
+    <main>
         <div>
             <div class="fixed">
                 <aside class="sns">
@@ -53,50 +68,107 @@
                     
                 </aside>
                 <aside class="scroll">
-                    <p class="active"><em><a href="">HOME</a></em></p>
-                    <p><em><a href="http://www.leedongwook.co.kr/Paper/view/code/about">ABOUT</a></em></p>
-                    <p><em><a href="http://www.leedongwook.co.kr/Paper/view/code/gallery">GALLERY</a></em></p>
+                    <p class="active"><em><a href="site\index.html">HOME</a></em></p>
+                    <p><em><a href="site\about.html">ABOUT</a></em></p>
+                    <p><em><a href="site\newsRelease.html">NEW RELEASE</a></em></p>
                 </aside>
             </div>
-            <div class="img_slide">
+            <div class="imgSlide">
                 <img src="./img/main_visual1.jpg" alt="이미지슬라이드1">
-                <img src="./img/main_visual2.jpg" alt="이미지슬라이드2">
-                <img src="./img/main_visual3.jpg" alt="이미지슬라이드3">
+                <!-- <img src="./img/main_visual2.jpg" alt="이미지슬라이드2">
+                <img src="./img/main_visual3.jpg" alt="이미지슬라이드3"> -->
             </div>
         </div>
-        <!-- <main> -->
-
     </main>
-        <!-- page2 -->
+    <!-- <main> -->
+    <!-- page2 -->
     
-    <article class="page2">
+    <div class="page2">
         <img src="./img/main_bg2.jpg" alt="2페이지배경">
         <div class="about">
-            
-            <h2>이동욱 LEEDONGWOOK</h2>
-            <b>PROFILE</b>
-            <p> 출생 1981년 11월 6일<br>
-                신장 184cm<br>
-                몸무게 72kg<br>
-                <b>FILMOGRAPHY</b><br>
-                2021 tvN 배드 앤 크레이지<br>
-                2020 tvN 구미호뎐<br>
-                2019 OCN 타인은 지옥이다<br>
-                    tvN  진심이 닿다
-            </p>
-        </div>
-        <div class="more">
-            <a href="#"><b>M O R E +</b></a>
-        </div>
-    </article>
-        <!-- page2 -->
-        <div class="page3">
-            <div>
-                <img src="./img/small_gallery1.jpg" alt="갤러리1">
+            <div class="hd">
+                <b>이동욱</b><span>LEEDONGWOOK</span>
             </div>
-            <div>
-                <img src="./img/small_gallery2.jpg" alt="갤러리2">
-                <a href="http://www.leedongwook.co.kr/Member/Auth/login/Board/list/board_name/gallery">GALLERY<br>ㅡ<br>M O R E+</a>
+            <div class="bd">
+                <div>PROFILE</div>
+                <dl>
+                    <dt>출생</dt>
+                    <dd>1981년 11월 6일</dd>
+                </dl>
+                <dl>
+                    <dt>신장</dt>
+                    <dd>184cm</dd>
+                </dl>
+                <dl>
+                    <dt>몸무게</dt>
+                    <dd>72kg</dd>
+                </dl>
+            </div>
+            <div class="bd2">
+                <div>FILMOGRAPHY</div>
+                <dl>
+                    <dt>2021</dt>
+                    <dd>tvN 배드 앤 크레이지</dd>
+                </dl>
+                <dl>
+                    <dt>2020</dt>
+                    <dd>tvN 구미호뎐</dd>
+                </dl>
+                <dl>
+                    <dt>2019</dt>
+                    <dd>OCN 타인은 지옥이다<br>
+                        tvN  진심이 닿다
+                    </dd>
+                </dl>
+            </div>
+            <div class="more">
+                <a href="#"><b>M O R E +</b></a>
+            </div>
+        </div>
+    </div>
+        <!-- page2 -->
+        <!-- page3 -->
+        <div class="page3">
+            <img src="./img/mainNews_bg6.jpg">
+            <div class="news">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">NEWS RELEASE<br>뉴스릴리즈<br>ㅡ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022-05-03</td>
+                            <td>이동욱, 구미호'이연'돌아온다</td>
+                        </tr>
+                        <tr>
+                            <td>2022-03-24</td>
+                            <td>클래식한 매력...이동욱에 빠져들다[화보]</td>
+                        </tr>
+                        <tr>
+                            <td>2022-02-21</td>
+                            <td>이동욱 "도전?해본 연기만 하는 것 너무 재미없어"[화보]</td>
+                        </tr>
+                        <tr>
+                            <td>2022-01-29</td>
+                            <td>'배앤크'이동욱, 통쾌했다! 수미상관 엔딩</td>
+                        </tr>
+                        <tr>
+                            <td>2022-01-28</td>
+                            <td>이동욱 "'배드 앤 크레이지', 연기 인생에 소중한 자양분 될 것" 종영 소감 </td>
+                        </tr>
+                        <tr>
+                            <td>2022-01-27</td>
+                            <td>'배드 앤 크레이지', 이쯤되면 '장르가 이동욱'</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><a href="#">M O R E <b>+</b></a></td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
         <!-- page3-->
@@ -116,5 +188,8 @@
         <!-- script -->
     </footer>
 
+    <script>
+        
+    </script>
 </body>
 </html>

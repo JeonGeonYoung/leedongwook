@@ -1,0 +1,36 @@
+@import url(./common.css);
+
+/* **************************************************************** */
+/*newsRelease*/
+main > .newsBg > img{ width:100%;}
+main > .newsBg > span{
+    position:absolute;
+    left:30%;top:20%;
+    font-weight: bold;
+    font-size: 70px;
+    color:#fff;
+}
+main > .boardBox{
+padding:0;
+}
+main > .boardBox > .board{
+    width:100%;
+    height:100vh;
+    margin-bottom:10%;
+    padding:50px auto;
+}
+
+main > .boardBox > .board > tbody > tr > td{
+    border:1px solid rgba(150, 142, 142, 0.87);
+}
+
+main > .boardBox > .board > tfoot{
+    text-align: center;
+}
+
+main > .boardBox > .board > tfoot > tr > td > a{
+    margin: auto 20px;
+}
+
+/*newsRelease*/
+/* **************************************************************** */
