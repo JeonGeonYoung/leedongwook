@@ -22,6 +22,8 @@
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
     <link href="./css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="./ajax/index.js"></script>
 </head>
 <body>
     <header>
@@ -30,32 +32,38 @@
             <span></span>
             <span></span>
         </div>
-        <h1><a href="http://www.leedongwook.co.kr/">LEEDONGWOOK</h1></a>
+        <h1><a href="http:/site/index.html">LEEDONGWOOK</a></h1>
         <nav>
-            <a href="/Member/Auth/login/">LOGIN</a>
-            <a href="/Member/Join/">JOIN</a>
-            <a href="http://en.leedongwook.co.kr/">EN</a>
+            <a href="">LOGIN</a>
+            <a href="">JOIN</a>
+            <a href="">EN</a>
             <a href="http://leedongwook.co.kr/">KR</a>
         </nav>
-
+        
         <div class="menu">
             <div>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">NEWSRELEASE</a></li>
+                    <li><a href="http:/site/index.html">HOME</a></li>
+                    <li><a href="http:/site/about.html">ABOUT</a></li>
+                    <li><a href="http:/site/newsRelease.html">NEWSRELEASE</a></li>
                 </ul>
                 <div>
-                    FAMILY SITE
+                    <select>
+                        <option><a href="#">FAMILY SITE</a></option>
+                        <option><a href="http://www.starship-ent.com/">스타쉽 홈페이지</a></option>
+                        <option><a href="http://www.iloen.com/">카카오M 홈페이지</a></option>
+                        <option><a href="https://www.kakaocorp.com/page/">카카오 홈페이지</a></option>
+                    </select>
                 </div>
                 <div>
-                    ☏+82-2-542-1526 ℡+82-2-533-1527
-                    ▦leedongwook.home@gmail.com
+                    <img src="./img/icon_tel.png"> +82-2-542-1526 <img src="./img/icon_fax.png"> +82-2-533-1527
+                        <img src="./img/icon_mail.png"> leedongwook.home@gmail.com
                 </div>
             </div>
         </div>
     </header>
 
+<div class="sli">
     <!-- main -->
     <main>
         <div>
@@ -68,21 +76,29 @@
                     
                 </aside>
                 <aside class="scroll">
-                    <p class="active"><em><a href="site\index.html">HOME</a></em></p>
-                    <p><em><a href="site\about.html">ABOUT</a></em></p>
-                    <p><em><a href="site\newsRelease.html">NEW RELEASE</a></em></p>
+                    <button><span>HOME</span></button>
+                    <button><span>ABOUT</span></button>
+                    <button><span>NEWS RELEASE</span></button>
                 </aside>
             </div>
-            <div class="imgSlide">
-                <img src="./img/main_visual1.jpg" alt="이미지슬라이드1">
-                <!-- <img src="./img/main_visual2.jpg" alt="이미지슬라이드2">
-                <img src="./img/main_visual3.jpg" alt="이미지슬라이드3"> -->
-            </div>
+            
+                <div class="imgSlide">
+                    <img src="./img/main_visual1.jpg" alt="이미지슬라이드1">
+                    <img src="./img/main_visual2.jpg" alt="이미지슬라이드2">
+                    <img src="./img/main_visual3.jpg" alt="이미지슬라이드3">
+                </div>
+                <div class="bottomBtn">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            
         </div>
+        <p class="ani"><img src="./img/scroll_btn.png"></p>
     </main>
     <!-- <main> -->
+
     <!-- page2 -->
-    
     <div class="page2">
         <img src="./img/main_bg2.jpg" alt="2페이지배경">
         <div class="about">
@@ -122,74 +138,66 @@
                 </dl>
             </div>
             <div class="more">
-                <a href="#"><b>M O R E +</b></a>
+                <a href="http:/site/about.html"><b>M O R E +</b></a>
             </div>
         </div>
     </div>
-        <!-- page2 -->
-        <!-- page3 -->
-        <div class="page3">
-            <img src="./img/mainNews_bg6.jpg">
-            <div class="news">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">NEWS RELEASE<br>뉴스릴리즈<br>ㅡ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2022-05-03</td>
-                            <td>이동욱, 구미호'이연'돌아온다</td>
-                        </tr>
-                        <tr>
-                            <td>2022-03-24</td>
-                            <td>클래식한 매력...이동욱에 빠져들다[화보]</td>
-                        </tr>
-                        <tr>
-                            <td>2022-02-21</td>
-                            <td>이동욱 "도전?해본 연기만 하는 것 너무 재미없어"[화보]</td>
-                        </tr>
-                        <tr>
-                            <td>2022-01-29</td>
-                            <td>'배앤크'이동욱, 통쾌했다! 수미상관 엔딩</td>
-                        </tr>
-                        <tr>
-                            <td>2022-01-28</td>
-                            <td>이동욱 "'배드 앤 크레이지', 연기 인생에 소중한 자양분 될 것" 종영 소감 </td>
-                        </tr>
-                        <tr>
-                            <td>2022-01-27</td>
-                            <td>'배드 앤 크레이지', 이쯤되면 '장르가 이동욱'</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"><a href="#">M O R E <b>+</b></a></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-        </div>
-        <!-- page3-->
-    <footer>
+    <!-- page2 -->
 
-        <!-- footer -->
+    <!-- page3 -->
+    <div class="page3">
+        <img src="./img/mainNews_bg6.jpg">
+        <div class="news">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">NEWS RELEASE<br>뉴스릴리즈<br>ㅡ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022-05-03</td>
+                        <td>이동욱, 구미호'이연'돌아온다</td>
+                    </tr>
+                    <tr>
+                        <td>2022-03-24</td>
+                        <td>클래식한 매력...이동욱에 빠져들다[화보]</td>
+                    </tr>
+                    <tr>
+                        <td>2022-02-21</td>
+                        <td>이동욱 "도전?해본 연기만 하는 것 너무 재미없어"[화보]</td>
+                    </tr>
+                    <tr>
+                        <td>2022-01-29</td>
+                        <td>'배앤크'이동욱, 통쾌했다! 수미상관 엔딩</td>
+                    </tr>
+                    <tr>
+                        <td>2022-01-28</td>
+                        <td>이동욱 "'배드 앤 크레이지', 연기 인생에 소중한 자양분 될 것" 종영 소감 </td>
+                    </tr>
+                    <tr>
+                        <td>2022-01-27</td>
+                        <td>'배드 앤 크레이지', 이쯤되면 '장르가 이동욱'</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><a href="http:/site/newsRelease.html">M O R E <b>+</b></a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <!-- page3-->
+
+</div>
+    <!-- footer -->
+    <footer>
         <a href="#">개인정보취급방침</a>
         <p>
             COPYRIGHT © KINGKONG by STARSHIP ENTERTAINMENT ALL RIGHTS RESERVED.
         </p>
-        <!-- footer -->
-    
-        <!-- script -->
-        <script>
-
-        </script>
-        <!-- script -->
     </footer>
-
-    <script>
-        
-    </script>
+    <!-- footer -->
 </body>
 </html>
