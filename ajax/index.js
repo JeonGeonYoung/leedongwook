@@ -23,22 +23,62 @@
     }
     inter = setInterval(fadeFun,4000);
     //이미지슬라이드
-    const content = document.querySelectorAll('.sli');
+    const content = document.querySelectorAll('.con');
     let offset;
 
-    $('.sli > main, .page2, .page3').on('wheel', function(){
+    $('.con').on('wheel', function(){
         let delta = event.wheelDelta;
         if(delta < 0){
             offset = $(this).next().offset().top;
         }else{
             offset = $(this).prev().offset().top;
         }
-        $('html').animate({
+        $('html').stop().animate({
             scrollTop : offset
         },{queue:false})
-        });
+    });
     //스크롤
-    
-    //애니스크롤
-        
-    //데이터제이슨~
+
+    // offset = $('.con').eq(0).offset().top;
+    // $('html').stop().animate({
+    //     scrollTop : offset
+    // },{queue:false})
+
+    // offset = $('.con').eq(1).offset().top;
+    // $('html').stop().animate({
+    //     scrollTop : offset
+    // },{queue:false})
+
+    // offset = $('.con').eq(2).offset().top;
+    // $('html').stop().animate({
+    //     scrollTop : offset
+    // },{queue:false})
+    const btn = document.querySelectorAll('.scroll > button');
+    const section = document.querySelectorAll('.con');
+
+    let idx=0;
+    let off=[];
+
+    section.forEach((ele)=>{
+        off.push(ele.offsetTop);
+
+    });
+    btn.forEach((ele,key)=>{
+        ele.addEventListener('click',()=>{
+            window.scrollTo({
+                left:0,
+                top:off[key],
+                behavior:'smooth'
+            });
+        })
+    })
+    window.addEventListener('scroll',()=>{
+        off.forEach((v,k)=>{
+            if(window.pageYOffset >= off[k]){
+                btn[idx].classList.remove('active');
+                btn[k].classList.add('active');
+                idx=k;
+            }
+        })
+    })
+    // 스크롤클릭이벤트~

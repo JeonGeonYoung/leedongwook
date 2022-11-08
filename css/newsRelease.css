@@ -22,7 +22,6 @@ main > .boardBox > .board{
     border-spacing: 0 25px;
 }
 
-main > .boardBox > .board > tbody tr{ }
 main > .boardBox > .board > tbody > tr > td{
     border:1px solid rgba(150, 142, 142, 0.87);
     padding: 2%;
